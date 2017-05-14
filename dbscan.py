@@ -30,7 +30,7 @@ def find_distances(current_point, data_points, eps):
 
 def expand_cluster(current_point, neighbors, clusters, cluster_num, eps, min_pts, data_points, visited_pts):
 
-    # make a new cluster with a core point
+    # make a new cluster with a new point
     clusters[cluster_num].append(current_point)
 
     # get density-reachable points from the selected core point's neighbors
