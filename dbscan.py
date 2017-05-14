@@ -46,7 +46,7 @@ def expand_cluster(current_point, neighbors, clusters, cluster_num, eps, min_pts
                     if n not in neighbors:
                         neighbors.append(n)
 
-        # add points to specific cluster
+        # add points to the newly created cluster
         for c in clusters:
             if pt not in c:
                 if pt not in clusters[cluster_num]:
